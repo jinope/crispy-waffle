@@ -1,0 +1,63 @@
+{
+  "name": "crispy-waffle",
+  "version": "0.1.0",
+  "private": false,
+  "homepage": "https://github.com/jinope/crispy-waffle",
+  "type": "module",
+  "main": "./dist/crispy-waffle.js",
+  "module": "./dist/typescript/index.js",
+  "description": "crispy-waffle is a webgl-based web 3d library.",
+  "exports": {
+    ".": "./dist/crispy-waffle.js"
+  },
+  "scripts": {
+    "build-typescript": "tsc",
+    "build-rollup": "rollup -c",
+    "build": "npm run build-typescript && npm run build-rollup",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "core-js": "^3.27.2",
+    "gl-matrix": "^3.4.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "babel-eslint": "^10.1.0",
+    "compression": "^1.7.4",
+    "eslint": "^8.33.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "rollup": "^3.14.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-size-snapshot": "^0.12.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "author": "znkim <znkim@kakao.com>",
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "webgl"
+  ],
+  "bugs": {
+    "url": "https://github.com/jinope/crispy-waffle/issues"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinope/crispy-waffle.git"
+  }
+}
